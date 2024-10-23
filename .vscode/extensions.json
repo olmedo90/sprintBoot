@@ -1,0 +1,8 @@
+{
+    "recommendations": [
+      "redhat.java", // Habilita Java en este proyecto
+      "vscjava.vscode-spring-boot", // Habilita Spring Boot
+      "vscjava.vscode-maven" // Habilita Maven
+    ]
+  }
+  

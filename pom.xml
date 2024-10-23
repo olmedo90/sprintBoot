@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Versión del modelo POM (Project Object Model). -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Información del proyecto padre. -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.4</version>
+        <relativePath/>  <!-- Busca el proyecto base en el repositorio si no está local. -->
+    </parent>
+
+    <!-- Identificación del proyecto. -->
+    <groupId>com.api-sis</groupId>
+    <artifactId>crud</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>crud</name>
+    <description>API REST con Java y Spring Boot</description>
+
+    <!-- Propiedades del proyecto -->
+    <properties>
+        <java.version>17</java.version>  <!-- Define la versión de Java. -->
+    </properties>
+
+    <!-- Dependencias del proyecto -->
+    <dependencies>
+
+        <!-- Starter para integrar MongoDB -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-mongodb</artifactId>
+        </dependency>
+
+        <!-- Starter para aplicaciones web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- Lombok: Genera getters, setters, y más automáticamente -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>  <!-- Opcional en tiempo de ejecución -->
+        </dependency>
+
+        <!-- Starter para pruebas -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>  <!-- Usado solo en pruebas -->
+        </dependency>
+
+        <!-- DevTools: Habilita recarga automática en modo desarrollo -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <optional>true</optional>  <!-- No incluido en producción -->
+        </dependency>
+
+    </dependencies>
+
+    <!-- Configuración de compilación (build) -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

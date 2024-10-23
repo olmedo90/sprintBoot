@@ -1,0 +1,5 @@
+com/api_sis/crud/CrudApplication.class
+com/api_sis/crud/controllers/UserController.class
+com/api_sis/crud/models/UserModel.class
+com/api_sis/crud/services/UserService.class
+com/api_sis/crud/repositories/IUserRepositorie.class
